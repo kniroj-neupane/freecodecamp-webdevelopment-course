@@ -1,0 +1,43 @@
+body{
+    width:100%;
+    background-color:1b1b32;
+    color:f5f6f7;
+    margin:0;
+    font-size:20px;
+  }
+  #description,#title{
+    text-align:center;
+    margin: 0.5em auto;
+  }
+  #survey-form{
+    width: 60vw;
+    max-width: 300px;
+    min-width: 50px;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+  fieldset{
+    border: none;
+    padding: 1rem 0;
+    border-bottom: solid;
+  }
+  label{
+    display: block;
+    margin: 0.5em 0;
+  }
+  input,textarea,select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  .inline{
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+  }
+fieldset:last-of-type{
+    border:none;
+  }
+textarea{
+    height: 6em;
+  }

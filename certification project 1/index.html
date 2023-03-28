@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Favourite Anime Form</h1>
+    <p id="description">Do you like anime? Vote for your favourite anime.</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Name <input type="text" id="name" placeholder="Ben Dover" required/></label>
+      <label id="email-label">Email <input type="email" id="email" placeholder="bananas@yellow.com" required/></label>
+      <label id="number-label">Age <input type="number" id="number" min="5" max="69" placeholder="22"/ >
+      <label>What is your favourite genre? <select id="dropdown">
+        <option value="">Select favourite genre</option>
+        <option value="1">Action</option>
+        <option value="2">Comedy</option>
+        <option value="3">Isekai</option>
+        </select>
+        </fieldset>
+        <fieldset>
+
+          <label>Preference<label><input class="inline" type="radio" name="preference"value="0" checked/> Subbed</label></label>
+          <label><input class="inline" type="radio" name="preference" value="1"/> Dubbed </label>
+          </fieldset>
+          <fieldset>
+            <label> Select the animes you like.</label>
+            <label><input class="inline" type="checkbox" value="1"/> One piece</label>
+            <label><input class="inline" type="checkbox" value="2"/> Naruto</label>
+            <label><input class="inline" type="checkbox" value="3"/> Death Note</label>
+            <label><input class="inline" type="checkbox" value="4"/>Hunter x Hunter</label>
+            <label><input class="inline" type="checkbox" value="5"/>Bleach</label>
+            <label>
+              If others, enter here:
+              <textarea>
+                </textarea>
+            </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit"/>
+      
+    </form>
+
+  </body>
+</html>
