@@ -1,0 +1,78 @@
+body{
+    display: block;
+    margin: 8px;
+    padding: 0;
+  }
+  #main-doc{
+    font-size: 18px;
+     background-color: white;
+     color: black;
+     margin: auto;
+     max-width: 100%;
+     padding: 20px;
+     position: relative;
+  }
+  header{
+    color: #357aab;
+    font-size: 1.6rem;
+  } 
+  code{
+    display: block;
+    text-align: left;
+    background-color: #eff3f4;
+    font-size: 0.9rem;
+    padding-left: 30px;
+  }  
+  p{
+    padding-left: 20px;
+  }
+  .inside-p{
+    padding-left: 50px;
+  }     
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar a{
+    text-decoration: none;
+    color: black;
+  }
+  #navbar a:hover{
+    color: gray;
+    padding: 5px;
+  }
+  #navbar li {
+      color: #4d4e53;
+      border-top: 1px solid;
+      list-style: none;
+      position: relative;
+      width: 100%;
+      font-size: 20px;
+      line-height: 2em;
+      padding-left: 40px;
+  } 
+  #navbar li:last-of-type{
+    border-bottom: 1px solid;
+  } 
+  @media (min-width: 500px){
+    #navbar{
+     position: fixed;
+      min-width: 290px;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 100%;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4); 
+    }
+     
+  #navbar header{
+    margin-left: 40px 
+  }
+    #main-doc{
+      margin-left: 310px; 
+    padding: 0px 20px;
+    }
+  }   

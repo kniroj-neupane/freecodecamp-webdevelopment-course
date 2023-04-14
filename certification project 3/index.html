@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>C Documentation page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Learning C</header>
+      <ul id="nav-ul">
+        <li>
+          <a href="#Introduction" class="nav-link">
+            Introduction
+          </a>
+        </li>
+        <li>
+          <a href="#Working_of_C" class="nav-link">
+            Working of C
+          </a>
+        </li>
+        <li>
+          <a href="#First_Program" class="nav-link">
+            First Program
+          </a>
+        </li>
+        <li>
+          <a href="#Variables" class="nav-link">
+            Variables
+          </a>
+        </li>
+        <li>
+          <a href="#Operators" class="nav-link">
+            Operators
+          </a>
+        </li>
+        <li>
+          <a href="#for_loop" class="nav-link">
+            for Loop
+          </a>
+        </li>
+        <li>
+          <a href="#while_loop" class="nav-link">
+            while loop
+          </a>
+        </li>
+        <li>
+          <a href="#if_else_statements" class="nav-link">
+            if else statements
+          </a>
+        </li>
+        
+
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          In 1972, a great computer scientist Dennis Ritchie created a new programming language called C at Bell laboratories. It was created from ALGOL, BCL, and B programming language. It contains all the features of these languages and many more additional concepts that make it unique from other programming languages. It is a powerful programming language that is strongly associated with the UNIX operating system and most of the UNIX operating systems are coded in C Language.
+      </p>
+      <p>
+Initially, it was limited to the UNIX operating system, but as it started spreading around the world, it became commercial, and many compilers were released for cross-platform systems. Today C runs under a variety of operating systems and hardware platforms. As it started evolving many versions of the language were released. At times, it became difficult for the developers to keep up with the latest version as the systems were running under the older versions.
+    </p>
+    <p>
+To assure that C language will remain standard, American National Standards Institute (ANSI) defined a commercial standard for C language in 1989.
+Later, it was approved by the International Standards Organization (ISO) in 1990. The C programming language is also called ANSI C.
+        </p>
+      </section>
+
+      <section class="main-section" id="Working_of_C">
+        <header>Working of C</header>
+        <ul>
+          <li>C is a compiled language.</li>
+          <li>A compiler is a special tool that compiles the program and converts it into an object file that is machine-readable.</li>
+          <li>After the compilation process, the linker will combine different object files and creates a single executable file to run the program.</li>
+        </ul>
+        <p>
+          Nowadays, various compilers are available online. The functionality will never differ and most of the compilers will provide the features required to execute both ‘C’ and ‘C++’ programs. Below is the name of such compilers:
+        
+        <ul class="inside-p">
+          <li>Clang compiler</li>
+          <li>MinGW compiler (Minimalist GNU for Windows)</li>
+          <li>Portable C compiler</li>
+          <li>Turbo C</li>
+        </ul>
+        </p>
+      </section>
+
+      <section class="main-section" id="First_Program">
+        <header>First Program</header>
+        <p>To get started in C write your first Hello World Progarm in your text editor(or IDE).Here is a sample of the code.</p>
+        <code>
+          #include &lt;stdio.h&gt<br>
+            int main()<br>
+            {<br>
+              printf("Hello World");<br>
+              return 0;<br>
+            }
+        </code>
+        <p>Compile and Run the code to see the magic happen.
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          Variables are containers for storing data values, like numbers and characters.
+          To create a variable, specify the type and assign it a value:
+        </p>
+        <code>int variable_name;</code><br>
+        <code>char variable_name='value';</code>
+        <p>Here <i>int</i> keyword is used to specify the datatype of the variable. You can also initialize a variable during declaration.</p>
+      </section>
+
+      <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <p>Operators are used to perform operations on variables and values.In the example below, we use the + operator to add together two values:</p>
+        <code> int x = 2 + 3;</code>
+        <p> C divides operators into following groups: 
+
+        <ul class="inside-p">
+          <li>Arithmetic Operator</li>
+          <li>Assignment Operator</li>
+          <li>Comparision Operator</li>
+          <li>Logical Operator</li>
+          <li>Bitwise Operator</li>
+        </ul>
+      </p>
+      </section>
+      <section class="main-section" id="for_loop">
+        <header>for loop</header>
+        <p>for loop is used in C for iteration. for loop consists of 3 parts: initialization, condition, increment/decrement.</p>
+        <code>for(int i=0;i<10;i++)<br>
+          printf("This is iteration %d\n",i);
+        </code>
+        <p>This executes the printf statement 10 times.</p>
+      </section>
+      <section class="main-section" id="while_loop">
+        <header>while loop</header>
+        <p> while loop is also used for iteration.</p>
+        <code>
+          int i=0;<br>
+          while(i<5){<br>
+            printf("This is iteration %d\n",i);<br>
+            i++;<br>
+          }
+        </code>
+        <p>This executes the printf statement 5 times.</p>
+      </section>
+      <section class="main-section" id="if_else_statements">
+        <header>if else statements</header>
+        <p>The if statement is used to execute a block of code if a specified condition is true. If the condition is false, the block of code under else statement is executed.</p>
+        <code>
+          if(condition){//statements}<br>
+          else{//statements}
+      </section>
+      
+    </main>
+
+  </body>
+</html>
