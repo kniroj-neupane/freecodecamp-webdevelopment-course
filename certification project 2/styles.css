@@ -1,0 +1,42 @@
+body{
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    color: white;
+  } 
+  #image{
+    display: block;
+    height: auto;
+    max-width: 100%;
+  } 
+  #img-div{
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  #img-caption{
+    font-size: 0.7rem;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color: gray;
+  }
+  #quote{
+    font-style: italic;
+  }
+  #quote:before{
+    content: '" ';
+  }
+  #quote:after{
+    content: ' "';
+  }
+  #quote-by{
+    font-family: -apple-system;
+    font-style: italic;
+  
+  }
+  #tribute-info{
+    text-align: left;
+  }
