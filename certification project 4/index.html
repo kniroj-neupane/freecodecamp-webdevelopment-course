@@ -1,169 +1,72 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  box-sizing: border-box;
-
-} 
-
-header{
-  position: fixed;
-  top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(90deg,white,#92a8d1);
-} 
-#header-img{
-  height: 30%;
-  width: 40vw;
-}
-#nav-bar{
-  width: 60vw;
-}
-#nav-bar a{
-  text-decoration: none;
-  color: black;
-  
-}
-#nav-bar ul{
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-#form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 200px;
-  margin-top: 50px;
-}
-input{
-  display: block;
-  margin: 10px;
-  border-radius: 10px;
-  border: 1px solid;
-  padding: 7px;
-}
-#submit{
-  border: 1px solid;
-  border-radius: 50px;
-  text-transform: uppercase;
-  
-}
-
-.feature-div{
-  display: flex;
-}
-.icon{
-  color: #f7786b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 20vw;
-
-}
-.desc{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80vw;
-  height: 100px;
-}  
-#How-it-works{
-  width: 100vw;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-iframe{
-  height: 315px;
-  width: 100%;
-  max-width: 600px;
-} 
-#Pricing{
-  margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.product{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100% / 3);
-    margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
-
-}
-.btn{
-    padding: 0 20px;
-    height: 40px;
-    font-size: 1em;
-    font-weight: 900;
-    text-transform: uppercase;
-    border: 3px black solid;
-    border-radius: 2px;
-    background: transparent;
-    cursor: pointer;  
-    
-}
-.product>button{
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Product Landing Page</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+      <header id="header">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        id="header-img">
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#Features">Features</a></li>
+            <li><a class="nav-link" href="#How-it-works">How it works</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+          </ul>   
+        </nav>
+      </header>
       
-    border: 0;
-    margin: 15px 0;
-    background-color: #f1c40f;
-    font-weight: 400;
-}
-.name{
-  width: 100%;
-  background-color: #92a8d1;
-  font-size: 1.2em;
-  font-weight: bold;
-  border: 1px solid;
-}
-.price{
-  font-size: 1.1em;
-  font-weight: bold;
-}
-@media (max-width: 500px){
-  #header{
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  
-}
-  @media(max-width: 550px){
-    #nav-bar{
-        margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    text-align: center;
-    padding: 0 150px;
-  }
-  .header-img{
-    width: 100%;
-    position: relative;
-  }
-  #form{
-    margin-top: 100px;
-  }
-  #nav-bar ul{
-    flex-direction: column;
-  }
-}
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name="email"type="email" placeholder="Enter your email here" required/>
+            <input type="submit" 
+            id="submit" 
+            value="Get started now">
+          </form>
 
-
+        <section id="Features">
+          <div class="feature-div">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>We have the best products to offer.</p>
+            </div>
+          </div>
+          <div class="feature-div">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Delivery</h2>
+              <p>Guarantees delivery in 2 days of ordering</p>
+            </div>
+          </div>
+          <div class="feature-div">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Qulity Assured</h2>
+              <p>Only the best Quality of products</p>
+            </div>
+          </div>
+        </section>
+        <section id="How-it-works">
+          <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"></iframe>
+        </section>
+        <section id="Pricing">
+          <div class="product">
+            <div class="name">Tenor Trombone</div>
+            <div class="price">$900</div>
+            <button class="btn">SELECT</button>
+          </div>
+          <div class="product">
+            <div class="name">Bass</div>
+            <div class="price">$600</div>
+            <button class="btn">SELECT</button>
+          </div>
+        </section> 
+      </header>
+    </body>
+  </html>
