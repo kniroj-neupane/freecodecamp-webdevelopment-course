@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Product Landing Page</title>
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
       <header id="header">
@@ -12,20 +13,60 @@
         id="header-img">
         <nav id="nav-bar">
           <ul>
-            <li><a class="nav-link"></a></li>
-            <li><a class="nav-link"></a></li>
-            <li><a class="nav-link"></a></li>
-          </ul>
+            <li><a class="nav-link" href="#Features">Features</a></li>
+            <li><a class="nav-link" href="#How-it-works">How it works</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+          </ul>   
         </nav>
-        <!-- insert video -->
-        <section id="form-section">
-          <form id="form">
-            <input id="email" type="email" placeholder="whatever@something.com" />
-            <input type="submit" id="submit">
-
-
+      </header>
+      
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name="email"type="email" placeholder="Enter your email here" required/>
+            <input type="submit" 
+            id="submit" 
+            value="Get started now">
           </form>
+
+        <section id="Features">
+          <div class="feature-div">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>We have the best products to offer.</p>
+            </div>
+          </div>
+          <div class="feature-div">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Delivery</h2>
+              <p>Guarantees delivery in 2 days of ordering</p>
+            </div>
+          </div>
+          <div class="feature-div">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Qulity Assured</h2>
+              <p>Only the best Quality of products</p>
+            </div>
+          </div>
         </section>
+        <section id="How-it-works">
+          <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"></iframe>
+        </section>
+        <section id="Pricing">
+          <div class="product">
+            <div class="name">Tenor Trombone</div>
+            <div class="price">$900</div>
+            <button class="btn">SELECT</button>
+          </div>
+          <div class="product">
+            <div class="name">Bass</div>
+            <div class="price">$600</div>
+            <button class="btn">SELECT</button>
+          </div>
+        </section> 
       </header>
     </body>
   </html>
